@@ -1,0 +1,54 @@
+body {
+  background: #fafafa;
+}
+
+.mario {
+  position: absolute;
+  bottom: 0;
+  background-image: url(mario.png);
+  width: 60px;
+  height: 60px;
+}
+
+.cano {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  background-image: url(cano.png);
+}
+
+.game-over {
+  text-align: center;
+  color: #000;
+  text-shadow: 2px 2px 2px red;
+  margin: 50px 0;
+  font-family: arial;
+}
+
+.game-over-img {
+  display:block;
+  margin:auto;
+}
+
+
+@keyframes slideright {
+  from {
+      background-position: 70000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}
+
+.background {
+  position: absolute;
+  bottom: 0px;
+  background-image: url('background.png');
+  background-repeat: repeat-x;
+  background-size:cover;
+  animation: slideright 600s infinite linear;
+  -webkit-animation: slideright 600s infinite linear;
+  width: 100%;
+  height: 80%;
+}
